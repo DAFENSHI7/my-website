@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #0a66c2;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello, I'm Abdulrahman</h1>
+    <p>This is my first website. I'm learning to build things on the web.</p>
+    <h2>About me</h2>
+    <p>I'm an engineering diploma student and I work in delivery services.</p>
+    <h2>Interests</h2>
+    <ul>
+      <li>Cars and vehicle electronics</li>
+      <li>Cybersecurity and Linux</li>
+    </ul>
+  </div>
+</body>
+</html>
