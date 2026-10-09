@@ -3,39 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <title>Abdulrahman | Cybersecurity</title>
   <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --green: #3fb950;
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
+      margin: 0;
+      font-family: "Courier New", Consolas, monospace;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
-    h1 {
-      color: #0a66c2;
-    }
-    .card {
-      background: white;
-      padding: 20px;
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px; }
+    header {
+      border: 1px solid var(--border);
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: var(--panel);
+      padding: 24px;
+      margin-bottom: 24px;
     }
+    .prompt { color: var(--green); }
+    h1 { margin: 8px 0 4px; font-size: 1.8rem; color: #fff; }
+    .role { color: var(--muted); margin: 0; }
+    section {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 20px 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: var(--green);
+      font-size: 1.1rem;
+      margin-top: 0;
+    }
+    h2::before { content: "# "; color: var(--muted); }
+    ul { padding-left: 20px; margin: 0; }
+    li { margin-bottom: 6px; }
+    .tags span {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 4px 6px 4px 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    a { color: var(--green); }
+    footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 30px; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Hello, I'm Abdulrahman</h1>
-    <p>This is my first website. I'm learning to build things on the web.</p>
-    <h2>About me</h2>
-    <p>I'm an engineering diploma student and I work in delivery services.</p>
-    <h2>Interests</h2>
-    <ul>
-      <li>Cars and vehicle electronics</li>
-      <li>Cybersecurity and Linux</li>
-    </ul>
+  <div class="wrap">
+
+    <header>
+      <div class="prompt">$ whoami</div>
+      <h1>Abdulrahman</h1>
+      <p class="role">Cybersecurity enthusiast | Linux | Systems troubleshooting</p>
+    </header>
+
+    <section>
+      <h2>about</h2>
+      <p>
+        Engineering diploma student focused on security, Linux, and solving technical problems
+        step by step. I approach every challenge by understanding the root cause first,
+        then fixing it carefully and documenting what I learned.
+      </p>
+    </section>
+
+    <section>
+      <h2>skills</h2>
+      <div class="tags">
+        <span>Linux</span>
+        <span>Networking basics</span>
+        <span>Threat analysis</span>
+        <span>Vulnerability awareness</span>
+        <span>Troubleshooting</span>
+        <span>Bash</span>
+        <span>Vehicle electronics</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>focus areas</h2>
+      <ul>
+        <li>Securing Linux systems and hardening configurations</li>
+        <li>Understanding common attacks and how to defend against them</li>
+        <li>Diagnosing faults methodically, from symptoms to root cause</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>contact</h2>
+      <p>
+        Email: <a href="mailto:your-email@example.com">your-email@example.com</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Abdulrahman. Built with HTML and hosted on GitHub Pages.
+    </footer>
+
   </div>
 </body>
 </html>
